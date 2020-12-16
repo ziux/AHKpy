@@ -1,19 +1,13 @@
 #Include %A_LineFile%\..\JSON.ahk
+#Include %A_LineFile%\..\base.ahk
 
 HotKeyIt(keys){
-  j:={keys:keys}
- out:=FileOpen("./output_hotkey", "w")
-
+ j:={keys:keys}
  p:=JSON.Dump(j)
- out.Write(p)
- out.Close()
+
+ WriteOutFile(p)
 }
 
 
 #^p::Pause
 
-F2::
-{
-MouseMove, 20, 30, 50, R
-return
-}
