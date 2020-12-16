@@ -1,6 +1,6 @@
 # AHKpy
 使用python调用autohotkey程序
-
+适配 ahk版本 1.1.26.01
 ## 使用
 ```python
 ahk = AHK()
